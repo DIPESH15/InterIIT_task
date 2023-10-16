@@ -1,0 +1,204 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card {
+    min-height: 100%;
+    cursor: pointer;
+}
+
+.card:hover {
+    min-height: 120%;
+    min-width: 120%;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px; /* Adjust the width of the logo image as needed */
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Navigation Links Styles */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin-top: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00; /* Change the color on hover as desired */
+  }
+  
+  /* Search Box Styles */
+  .search-box {
+    margin-right: 20px;
+  }
+  
+  .search-box input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-box button {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .search-box button:hover {
+    background-color: #ffdb4d; /* Change the background color on hover as desired */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin-top: 10px;
+    }
+  }
+  .helo {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    
+  }
+  
+  .helo img {
+    margin-right: 10px; /* Add some spacing between the image and the heading */
+  }
+    
+
+
+
+
+
+
+
+
+.btn1 {
+
+    background-color: #ffdb4d;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.btn1:hover {
+    background-color: white;
+    /* Darker orange color on hover */
+    color: #000;
+}
+
+.footer-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+

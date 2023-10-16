@@ -1,0 +1,30 @@
+<div class="container-fluid mt-5">
+
+    <div class="helo">
+        <img src="https://cdn-icons-png.flaticon.com/128/4365/4365271.png" width="50px" alt="Logo">
+        <h1>KGP Chronicle-Top Technology News</h1>
+      </div>
+    <div class="row">
+    <div class="col-lg-3 mt-3 mb-3" *ngFor="let headlines of technologyNewsResult">
+    <div class="card"*ngIf="headlines.urlToImage">
+        <a href="{{headlines.url}}" target="blank" class="btn btn-dark btn-sm-2" >
+        <img src={{headlines.urlToImage}} width="100%" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">{{headlines.title}}</h5>
+   
+        </div>
+    </a>
+    </div>
+    <div *ngIf="headlines.urlToImage === undefined || headlines.urlToImage === null">
+        <a href="{{headlines.url}}" target="blank" class="btn btn-dark btn-sm-2" >
+        <img src="https://cdn.vectorstock.com/i/preview-1x/65/30/default-image-icon-missing-picture-page-vector-40546530.jpg" width="100%" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">{{headlines.title}}</h5>
+        
+        </div>
+    </a>
+    </div>
+    </div>
+    
+    </div>
+    

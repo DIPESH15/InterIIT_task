@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>Subscription</title>
+    </head>
+    <body>
+     <div class="hero">
+        <h3>Subscribe to Our Newsletter</h3>
+        <h1>OurBrand New<br>Website is on It's Way</h1>
+       
+    <form action="https://script.google.com/macros/s/AKfycbw1QomA-bqZvpWEFGs__OQFIZEnrGxzjNdhq-AJbaXnoykKieCOHNAk9Qt90kR58RvIPQ/exec" method="post">
+        <input type="text" name="name" placeholder='Name'><br><br>
+        <input type="email" name="email" placeholder='Email'><br><br>
+        <input type="submit" id="sub">
+    </form>
+    <h1 id="msg"></h1>
+    <script>
+        let form = document.querySelector("form");
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.querySelector("#sub").value = "Submiting..";
+            let data = new FormData(form);
+            fetch('Paste_Your_Api_EndPoint_Url', {
+                    method: "POST",
+                    body: data
+                })
+                .then(res => res.text())
+                .then(data => {
+                    document.querySelector("#msg").innerHTML = data;
+                    document.querySelector("#sub").value = "Submit"
+                });
+        })
+    </script>
+       
+     </div>
+     
+    </body>
+</html>

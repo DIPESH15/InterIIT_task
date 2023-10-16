@@ -1,0 +1,28 @@
+<div class="helo">
+    <img src="https://cdn-icons-png.flaticon.com/128/5822/5822082.png" width="50px" alt="Logo">
+    <h1>KGP Chronicle-Top "{{ title }}" News</h1>
+</div>
+
+<div class="card-container">
+    <ng-container *ngFor="let headlines of newsArticles">
+        <div class="card col-lg-3 mt-3 mb-3" *ngIf="headlines.urlToImage; else noImage">
+            <a href="{{headlines.url}}" target="blank" class="btn btn-dark btn-sm-2">
+                <img src="{{headlines.urlToImage}}" width="100%" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{headlines.title}}</h5>
+                </div>
+            </a>
+        </div>
+        <ng-template #noImage>
+            <div class="card col-lg-3 mt-3 mb-3">
+                <a href="{{headlines.url}}" target="blank" class="btn btn-dark btn-sm-2">
+                    <img src="https://cdn.vectorstock.com/i/preview-1x/65/30/default-image-icon-missing-picture-page-vector-40546530.jpg"
+                        width="100%" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{headlines.title}}</h5>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+    </ng-container>
+</div>
