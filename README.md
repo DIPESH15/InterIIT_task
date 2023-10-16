@@ -2,7 +2,7 @@
 
 Hello everyone!
 
-Welcome to **KGP Chronicle**, your premier destination for the latest news updates! In this project, I have created a dynamic news forum using a blend of HTML, CSS, Bootstrap, JavaScript, and Angular. Angular, being a powerful single-page application framework, allowed me to structure the project effectively.
+Welcome to **KGP Chronicle**, your premier destination for the latest news updates! In this project, I have created a dynamic news forum using a blend of HTML, CSS, Bootstrap, JavaScript,TypeScript and Angular. Angular, being a powerful single-page application framework, allowed me to structure the project effectively.
 
 ## Features
 
